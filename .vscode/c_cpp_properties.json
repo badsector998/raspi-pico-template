@@ -4,7 +4,7 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "D:\\Tools\\vsarm-rpi-pico\\pico-sdk\\**"
+                "${PICO_SDK_PATH}/**"
             ],
             "defines": [
                 "_DEBUG",
@@ -12,10 +12,10 @@
                 "_UNICODE"
             ],
             "windowsSdkVersion": "10.0.22000.0",
-            "cStandard": "c17",
+            "cStandard": "gnu11",
             "cppStandard": "c++17",
-            "intelliSenseMode": "linux-gcc-x64",
-            "compilerPath": "C:/mingw/MinGW/bin/gcc.exe",
+            "intelliSenseMode": "${default}",
+            "compilerPath": "D:\\Tools\\vsarm-rpi-pico\\toolchain\\10 2021.10\\bin\\arm-none-eabi-gcc.exe",
             "configurationProvider": "ms-vscode.cmake-tools"
         },
         {
