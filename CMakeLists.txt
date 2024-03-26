@@ -14,10 +14,10 @@ set(CMAKE_CXX_STANDARD 17)
 pico_sdk_init()
 
 # Tell CMAKE where to find the executable source file
-add_executable(${PROJECT_NAME} blink.c)
+add_executable(blink blink.c)
 
 # Create map/bin/hex/uf2 files
-pico_add_extra_outputs(${PROJECT_NAME})
+pico_add_extra_outputs(blink)
 
 # Link to pico_stdlib (gpio, time, etc functions)
-target_link_libraries(${PROJECT_NAME} pico_stdlib)
+target_link_libraries(blink pico_stdlib)
